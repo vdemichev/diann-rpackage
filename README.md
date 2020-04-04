@@ -5,7 +5,7 @@ A package containing a number of convenient functions for dealing with processed
 ```
 library(diann)
 ```
-Load a DIA-NN report (a small sample report included in this repository)
+Load a DIA-NN report (a small sample report is included in this repository)
 ```
 df <- diann_load("diann_report.tsv")
 ```
