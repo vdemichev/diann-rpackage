@@ -1,6 +1,11 @@
 ### DiaNN R Package
 A package containing a number of convenient functions for dealing with processed feature quantification data. The package has been developed primarily to support DIA/SWATH-MS data analysis with DIA-NN https://github.com/vdemichev/DiaNN and allow for MaxLFQ-based protein quantification (https://doi.org/10.1074/mcp.M113.031591) after manual precursor-level filtering and batch correction.
 
+**DIA-NN: neural networks and interference correction   
+enable deep proteome coverage in high throughput**  
+Vadim Demichev, Christoph B. Messner, Spyros I. Vernardis, Kathryn S. Lilley, Markus Ralser  
+https://www.nature.com/articles/s41592-019-0638-x
+
 **Installation in R**:
 ```
 install.packages("devtools")
