@@ -1,0 +1,14 @@
+Package: diann
+Type: Package
+Title: Report processing and protein quantification for MS-based proteomics
+Version: 1.0
+Date: 2020-04-03
+Author: Vadim Demichev
+Maintainer: Vadim Demichev <vadim.demichev@gmail.com>
+Description: A set of functions for dealing with mass spectrometry-based proteomics analysis reports.
+License: CC BY 4.0
+Imports: Rcpp (>= 1.0.1), RcppEigen, data.table, stats
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 7.1.0
+Encoding: UTF-8
+

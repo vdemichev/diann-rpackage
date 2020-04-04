@@ -1,0 +1,5 @@
+useDynLib(diann)
+import(RcppEigen, data.table)
+importFrom(Rcpp, evalCpp)
+importFrom(stats, as.formula)
+exportPattern("diann_")

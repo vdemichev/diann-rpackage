@@ -1,0 +1,5 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^README.Rmd
+^diann_report.tsv
+
