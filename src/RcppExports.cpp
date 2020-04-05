@@ -6,16 +6,6 @@
 
 using namespace Rcpp;
 
-// rcppeigen_hello_world
-Eigen::MatrixXd rcppeigen_hello_world();
-RcppExport SEXP _diann_rcppeigen_hello_world() {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcppeigen_hello_world());
-    return rcpp_result_gen;
-END_RCPP
-}
 // col_max
 std::vector<double> col_max(std::vector<double>& quantities, int m, int n);
 RcppExport SEXP _diann_col_max(SEXP quantitiesSEXP, SEXP mSEXP, SEXP nSEXP) {
@@ -45,7 +35,6 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_diann_rcppeigen_hello_world", (DL_FUNC) &_diann_rcppeigen_hello_world, 0},
     {"_diann_col_max", (DL_FUNC) &_diann_col_max, 3},
     {"_diann_maxlfq_solve", (DL_FUNC) &_diann_maxlfq_solve, 4},
     {NULL, NULL, 0}
