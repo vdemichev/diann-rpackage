@@ -1,7 +1,7 @@
 Package: diann
 Type: Package
 Title: Report processing and protein quantification for MS-based proteomics
-Version: 1.0
+Version: 1.0.1
 Date: 2020-04-03
 Author: Vadim Demichev
 Maintainer: Vadim Demichev <vadim.demichev@gmail.com>
