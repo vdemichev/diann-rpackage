@@ -143,7 +143,7 @@ diann_maxlfq <- function(x, sample.header = "File.Name", group.header = "Protein
       piv <- cast(df[which(df[[group.header]] == proteins[i]),], sample.header, id.header, quantity.header) 
     }
     if (nrow(piv)==1 | ncol(piv) == 1) {
-      res <- piv[1,]
+      res <- col_max(as.vector(piv), nrow(piv), ncol(piv))
     } else {
       piv[is.na(piv)] <- -1000000.0
       ref = col_max(as.vector(piv), nrow(piv), ncol(piv))
