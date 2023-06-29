@@ -35,7 +35,7 @@ pivot <- function(df, sample.header, id.header, quantity.header) {
   piv <- as.data.frame(dcast.data.table(x, as.formula(paste0(id.header,'~',sample.header)), value.var = "value")) 
   rownames(piv) <- piv[[1]]
   piv[[1]] <- NULL
-  piv <- piv[order(rownames(piv)),]
+  piv <- piv[order(rownames(piv)), , drop = FALSE]
   as.matrix(piv)
 }
 
@@ -45,7 +45,7 @@ pivot_aggregate <- function(df, sample.header, id.header, quantity.header) {
   piv <- as.data.frame(dcast.data.table(x, as.formula(paste0(id.header,'~',sample.header)), value.var = "value", fun.aggregate = function(x) max(x, na.rm=TRUE))) 
   rownames(piv) <- piv[[1]]
   piv[[1]] <- NULL
-  piv <- piv[order(rownames(piv)),]
+  piv <- piv[order(rownames(piv)), , drop = FALSE]
   piv = as.matrix(piv)
   piv[is.infinite(piv)] <- NA
   piv
